@@ -1,15 +1,6 @@
 from my_data import MyData
 from utils import Utils
 
-
-def get_data(path):
-    print('get data')
-
-
-def calculate_mean(data):
-    print('mean')
-
-
 # /Users/andranikalajajyan/Desktop/technicalinterviewtaskkrisp/Model1_Score.log
 # /Users/andranikalajajyan/Desktop/technicalinterviewtaskkrisp/Model2_Score.log
 # /Users/andranikalajajyan/Desktop/technicalinterviewtaskkrisp/Model3_Score.log
@@ -58,8 +49,8 @@ if __name__ == '__main__':
         print(f"{model.name} variance is: {model.variance}")
         print(f"{model.name} t-test value is: {t_test}")
         print(f"{model.name} f-test value is: {f_test}")
-        if released.mean-model.mean < good_mean:
-            good_mean = released.mean-model.mean
+        if released.mean - model.mean < good_mean:
+            good_mean = released.mean - model.mean
             good_mean_model_name = model.name
         if f_test > good_f_test:
             good_f_test = f_test
